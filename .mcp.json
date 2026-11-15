@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "notes": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "MarkdownNotesMcp",
+        "--no-launch-profile",
+        "--verbosity",
+        "quiet"
+      ],
+      "env": {
+        "NOTES_ROOT": "sample-notes"
+      }
+    },
+    "dotnet-docs": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "MarkdownNotesMcp",
+        "--no-build",
+        "--no-launch-profile",
+        "--verbosity",
+        "quiet"
+      ],
+      "env": {
+        "NOTES_ROOT": "../dotnet-docs"
+      }
+    }
+  }
+}
